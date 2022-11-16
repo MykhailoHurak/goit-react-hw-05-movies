@@ -7,8 +7,9 @@
   background-color: orange;
   color: white;
   border: none;
-  padding: 5px 20px;
+  padding: 5px 16px;
   margin-right: 10px;
+  font-size: 16px;
 }
 
 .PageMovies_Input {
