@@ -42,7 +42,7 @@ export const PageMovieDetails = () => {
                             className='PageMovieDetails_ButtonGoBack' 
                             onClick={goBack}
                         > 
-                        Go back
+                            Go back
                         </button>
 
                         <div className='PageMovieDetails_Box'>
