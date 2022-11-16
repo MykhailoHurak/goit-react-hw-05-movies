@@ -1,0 +1,36 @@
+.PageMovieDetails_Box {
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+}
+
+.PageMovieDetails_BoxText {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  alignitems: start;
+}
+
+.PageMovieDetails_BoxAdditional {
+  display: flex;
+  padding: 10px;
+}
+
+.PageMovieDetails_AdditionalText {
+  margin-right: 10px;
+}
+
+.PageMovieDetails_AdditionalLink {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.PageMovieDetails_ButtonGoBack {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: orange;
+  color: white;
+  border: none;
+}
