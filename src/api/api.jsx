@@ -54,3 +54,21 @@ export const getReviews = movieId => {
     };
     return axios.get(`movie/${movieId}/reviews`).then(res => res.data.results);
 };
+
+// ======================================================================================
+
+// Пошук фільму за ключовим словом на сторінці фільмів
+//https:api.themoviedb.org/3/search/movie?
+//api_key =<< api_key >>& language=en - US & page=1 & include_adult=false
+export const getSearchMovies = query => {
+    axios.defaults.params = {
+        api_key: API_KEY,
+        query,
+        language: 'en-US',
+        page: 1,
+        include_adult: false,
+    };
+    return axios.get('search/movie').then(res => {
+        return res.data.results;
+    });
+};

@@ -30,7 +30,7 @@ export const PageMovieDetails = () => {
         navigate(locationGoBack);
     };
 
-    const { poster_path, title, vote_averag, overview, genres } = movie;
+    const { poster_path, title, vote_average, overview, genres } = movie;
   
     return (
         <>
@@ -49,7 +49,7 @@ export const PageMovieDetails = () => {
                             <img src={poster_path && imgUrl + poster_path} alt="" width="20%" />
                             <div className='PageMovieDetails_BoxText'>
                                 <h2>{title}</h2>
-                                <p>User Score {vote_averag}</p>
+                                <p>User Score: {vote_average}</p>
 
                                 <h3>Overvies</h3>
                                 <p>{overview}</p>
