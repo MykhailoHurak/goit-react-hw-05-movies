@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/167.a004914e.chunk.css","mappings":"AAAA,eACI,YACJ,CAEA,OACI,cACJ","sources":["pages/PageHome/PageHome.css"],"sourcesContent":[".HomeContainer {\n    padding: 10px;\n}\n\n.Title {\n    font-size: 18px;\n}"],"names":[],"sourceRoot":""}
