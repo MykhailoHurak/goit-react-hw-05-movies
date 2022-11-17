@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { useEffect, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
@@ -5,7 +6,7 @@ import { getMovieDetails } from '../../api/api';
 
 import './PageMovieDetails.css';
 
-export const PageMovieDetails = () => {
+const PageMovieDetails = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -83,9 +84,14 @@ export const PageMovieDetails = () => {
                                 Reviews
                             </Link>
                         </div>
-                        <Outlet />
+                        {/* <Outlet /> */}
+                        <Suspense fallback={<div>Loading page...</div>}>
+                            <Outlet />
+                        </Suspense>
                     </>
             )}
         </>
     );
 };
+
+export default PageMovieDetails;

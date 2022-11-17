@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCast } from '../../api/api';
 
-export const Cast = () => {
+const Cast = () => {
     const [cast, setCast] = useState([]);
     const imgUrl = 'https://image.tmdb.org/t/p/w400';
     const { movieId } = useParams();
@@ -36,3 +36,5 @@ export const Cast = () => {
         </>
     );
 };
+
+export default Cast;

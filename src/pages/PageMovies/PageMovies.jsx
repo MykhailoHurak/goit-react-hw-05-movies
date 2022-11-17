@@ -4,7 +4,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { getSearchMovies } from '../../api/api';
 import './PageMovies.css';
 
-export const PageMovies = () => {
+const PageMovies = () => {
 
     const [input, setInput] = useState('');
     const [movieList, setMovieList] = useState([]);
@@ -70,3 +70,5 @@ export const PageMovies = () => {
         </>
     );
 };
+
+export default PageMovies;

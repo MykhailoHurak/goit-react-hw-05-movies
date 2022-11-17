@@ -4,7 +4,7 @@ import { getTrending } from '../../api/api';
 
 import './PageHome.css';
 
-export const PageHome = () => {
+const PageHome = () => {
   const [movieList, setMovieList] = useState([]);
   const location = useLocation();
 
@@ -39,3 +39,5 @@ export const PageHome = () => {
     </div>
   );
 };
+
+export default PageHome;
